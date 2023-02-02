@@ -1,0 +1,67 @@
+@use '../../../styles/variables'
+@use '../../../styles/mixins' 
+    
+#information
+    @include mixins.center
+    width: 80%
+    padding: 1rem
+    margin: 3rem 0
+    text-align: left
+    flex-direction: column
+    border-radius: variables.$card-border-radius
+    background-color: variables.$bg-color-secondary
+    
+    .banner-container
+        text-align: center
+
+    .banner
+        max-width: 90%
+    
+    .title
+        padding: .7rem
+        font-size: 2rem
+        color: variables.$text-color-secondary
+        border-radius: variables.$card-border-radius
+
+    .info-card
+        @include mixins.center
+        gap: 1rem
+        width: 100%
+        justify-content: start
+
+        h3
+            font-size: .8rem
+            margin-bottom: .5rem
+            color: variables.$text-color-secondary
+
+        p
+            font-weight: bold
+            color: variables.$text-color
+
+        svg
+            width: 8%
+            height: 8%
+            background-color: transparent
+    
+        #phone-icon
+            color: #6DB33F
+
+        #email-icon
+            color: #7010EF
+            
+        #pin-icon
+            color: #DA1F31
+
+    .qr-code
+        width: 25%
+        margin-top: 3rem
+        transition: transform 0.3s
+        box-shadow: variables.$box-shadow
+        border-radius: variables.$card-border-radius
+        &:hover
+            transform: scale(1.2)
+           
+            
+
+        
+

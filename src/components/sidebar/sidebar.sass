@@ -1,0 +1,22 @@
+@use '../../styles/variables'
+@use '../../styles/mixins'
+
+#sidebar
+    height: 50%
+    flex: 1 1 0 
+    display: flex
+    padding: 2rem 0
+    text-align: center
+    align-items: center
+    flex-direction: column
+    box-shadow: variables.$box-shadow
+    background-color: variables.$bg-color
+    border-radius: variables.$container-border-radius
+
+    .avatar-profile
+        max-width: 70%
+        box-shadow: variables.$box-shadow
+        border-radius: variables.$container-border-radius
+
+    .btn
+        @include mixins.btn
