@@ -16,8 +16,15 @@
 
 .gif-dev
     padding: .5rem
-    width: 25%
-    box-shadow: variables.$box-shadow
+    width: 30%
     border-radius: variables.$card-border-radius
     &:hover
-          transform: scale(1.1)
+        box-shadow: variables.$box-shadow
+        transform: scale(1.05)
+
+@media (max-width: 599px)  
+    .about-project-conteiner
+        padding: 0
+        margin: 0 auto
+    .gif-dev
+        width: 100%
