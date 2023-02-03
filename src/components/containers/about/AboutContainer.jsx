@@ -21,7 +21,7 @@ export const AboutContainer = () => {
       <p>
         Sou uma pessoa altamente comunicativa, adaptável, analítica e acredito
         que essas características foram moldadas pela minha trajetória
-        profissional, na qual trabalhoi com o público por muito tempo. <br></br>
+        profissional, na qual trabalho com o público por muito tempo. <br></br>
         E, por falar em trajetória, fiquei super animado em participar do
         Startup Weekend Brasil, como mostro nessa minha foto de perfil xD
       </p>
