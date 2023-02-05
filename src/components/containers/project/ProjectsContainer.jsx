@@ -1,5 +1,6 @@
 import "./project.sass";
 import gifDev from "../../../assets/leodev.gif";
+import { ProgressBar } from "../../progress-bar/ProgressBar";
 
 export const ProjectsContainer = () => {
   return (
