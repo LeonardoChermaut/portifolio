@@ -1,10 +1,14 @@
 import "./project.sass";
 import gifDev from "../../../assets/leodev.gif";
+import { Bar } from "../../bar/Bar";
 
 export const ProjectsContainer = () => {
   return (
     <section className="projects-container">
+      <div className="sub-container">
       <h2>Projetos</h2>
+      <Bar />
+      </div>
 
       <div className="about-project-conteiner">
         <h3 className="sub-title-project">Alterdata Open Space</h3>

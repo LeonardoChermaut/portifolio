@@ -13,6 +13,7 @@ import {
   SiJava,
 } from "react-icons/si";
 import { FaBootstrap } from "react-icons/fa";
+import { Bar } from "../../bar/Bar";
 
 const stacks = [
   {
@@ -83,7 +84,10 @@ const stacks = [
 export const TechnologiesContainer = () => {
   return (
     <section className="stacks-container">
+      <div className="sub-container">
       <h2>Tecnologias</h2>
+      < Bar />
+      </div>
       <div className="stacks-grid">
         {stacks.map((stack) => (
           <div className="stack-card" id={stack.id} key={stack.id}>

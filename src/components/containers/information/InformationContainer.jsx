@@ -1,36 +1,37 @@
-import { AiFillPhone, AiOutlineMail, AiFillEnvironment } from "react-icons/ai";
 import { SocialNetworkContainer } from "../social/SocialNetworkContainer";
-import "./information.sass";
+import { FcCollaboration, FcPuzzle, FcIdea} from "react-icons/fc";
 import QRCodeWpp from "../../../assets/QRcode.png";
 import banner from "../../../assets/banner.png";
+import "./information.sass";
 
 const information = [
   {
     id: 1,
-    name: "phone-icon",
-    icon: AiFillPhone,
-    title: "Celular",
-    description: "(021) 9 6660-9888",
+    name: "speak-icon",
+    icon: FcCollaboration,
+    title: "Oratória",
+    description: "Comunicação",
   },
   {
     id: 2,
-    name: "email-icon",
-    icon: AiOutlineMail,
-    title: "E-mail",
-    description: "chermauts@hotmail.com",
+    name: "idea-icon",
+    icon: FcIdea,
+    title: "Criatividade",
+    description: "Brainstorm",
   },
   {
     id: 3,
-    name: "pin-icon",
-    icon: AiFillEnvironment,
-    title: "Localização",
-    description: "Teresópolis / Rio de Janeiro",
+    name: "puzzle-icon",
+    icon: FcPuzzle,
+    title: "Sistematização",
+    description: "Organização",
   },
 ];
 
 export const InformationContainer = () => {
   return (
     <section id="information">
+      
       <div className="banner-container">
         <img
           className="banner"
@@ -38,7 +39,6 @@ export const InformationContainer = () => {
           alt="Banner escrito o nome Leonardo Chermaut e dando boas saudações."
         />
       </div>
-
       {information.map((item) => (
         <div key={item.id} className="info-card">
           <item.icon id={`${item.name}`} />

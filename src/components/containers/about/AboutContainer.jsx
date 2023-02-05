@@ -1,10 +1,13 @@
 import "./about.sass";
 import gifSuperMario from "../../../assets/mariodev.gif";
+import { Bar } from "../../bar/Bar";
 
 export const AboutContainer = () => {
   return (
     <section className="about-container">
-      <h2>Sobre</h2>
+      <div className="sub-container">
+        <h2>Sobre Mim</h2> <Bar />
+      </div>
       <p>
         Olá, meu nome é Leonardo e sou um desenvolvedor Full Stack apaixonado
         por tecnologia. <br></br> Tenho 25 anos e fui formado pela parceria
@@ -23,7 +26,8 @@ export const AboutContainer = () => {
         que essas características foram moldadas pela minha trajetória
         profissional, na qual trabalhei com o público por muito tempo. <br></br>
         E, por falar em trajetória, fiquei super animado em participar do
-        Startup Weekend Brasil, estando entre as ideias mais votadas, como mostro nessa minha foto de perfil. xD
+        Startup Weekend Brasil, estando entre as ideias mais votadas, como
+        mostro nessa minha foto de perfil. xD
       </p>
       <img
         className="gif-super-mario"

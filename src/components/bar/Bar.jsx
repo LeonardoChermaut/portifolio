@@ -1,7 +1,7 @@
 import React from "react";
 import "./progressbar.sass"
 
-export const ProgressBar = () => {
+export const Bar = () => {
   return (
     <div className="container">
       <div className="progress progress-striped">

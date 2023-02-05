@@ -1,6 +1,8 @@
 import { FaLinkedinIn, FaGithub, FaInstagram } from "react-icons/fa";
+import { AiOutlineMail, AiOutlineWhatsApp } from "react-icons/ai";
 import "./socialnetwork.sass";
 
+const subject = "?subject=Contato Portfolio"
 const socialNetworks = [
   {
     name: "github",
@@ -17,7 +19,18 @@ const socialNetworks = [
     url: "https://www.linkedin.com/in/leonardochermaut/",
     icon: <FaLinkedinIn />,
   },
+  {
+    name: "email",
+    url: `mailto:chermauts@hotmail.com${subject}`,
+    icon: <AiOutlineMail />,
+  },
+  {
+    name: "whatsapp",
+    url: "https://api.whatsapp.com/send?phone=5521966609888",
+    icon: <AiOutlineWhatsApp />,
+  },
 ];
+
 
 export const SocialNetworkContainer = () => {
   return (
