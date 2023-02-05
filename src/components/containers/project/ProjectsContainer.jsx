@@ -1,6 +1,5 @@
 import "./project.sass";
 import gifDev from "../../../assets/leodev.gif";
-import { ProgressBar } from "../../progress-bar/ProgressBar";
 
 export const ProjectsContainer = () => {
   return (
@@ -16,21 +15,21 @@ export const ProjectsContainer = () => {
         />
         <p>
           Este foi o nome criado para a aplicação de uso interno da empresa. Os
-          colaboradores previamente autorizados podem agendar seus dias e
+          colaboradores previamente autorizados, podem agendar seus dias e
           horários de trabalho, tudo através de uma interface intuitiva e fácil
           de usar.
         </p>
         <p>
-          O sistema representa um ambiente virtual da empresa, com cadeiras
-          clicáveis ​​para melhor acessibilidade. <br></br> Após o agendamento
-          ser concluído, os colaboradores receberam um e-mail com informações
-          sobre a sessão. <br></br>Eles também podem cancelar, excluir ou editar
+          Este sistema representa um ambiente virtual e real da empresa, com cadeiras totalmente
+          clicáveis  e com as imagens para melhor acessibilidade. <br></br> Após o agendamento
+          ser concluído, caso houvessem colaboradores convidados para a sessão, os colaboradores recebera um e-mail com informações
+          de horário, acentos e as respectivas datas de entrada e saída. <br></br>O colaborador responsável pelo cadastro pode cancelar, excluir ou editar
           o agendamento a qualquer momento.
         </p>
         <p>
           O projeto foi supervisionado com o processo SCRUM, incluindo
           planejamento, reuniões administrativas, retrospectiva e com a
-          liderança técnica e o gerente de produto presente.{" "}
+          liderança técnica e o gerente de produto presente.
         </p>
         <p>
           Eu fiquei responsável pelo desenvolvimento do back-end com Java 11 e
