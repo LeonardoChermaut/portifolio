@@ -1,50 +1,54 @@
 import { SocialNetworkContainer } from "../social/SocialNetworkContainer";
-import { FcCollaboration, FcPuzzle, FcIdea} from "react-icons/fc";
 import QRCodeWpp from "../../../assets/QRcode.png";
 import banner from "../../../assets/banner.png";
+import communication from "../../../assets/communication.png";
+import creativity from "../../../assets/creativity.png";
+import teamwork from "../../../assets/teamwork.png";
+import adaptability from "../../../assets/adaptability.png";
 import "./information.sass";
 
-const information = [
+const softkills = [
   {
     id: 1,
-    name: "speak-icon",
-    icon: FcCollaboration,
-    title: "Oratória",
-    description: "Comunicação",
+    name: "communication-png",
+    img: communication,
+    description: "Comunicação Efetiva",
   },
   {
     id: 2,
-    name: "idea-icon",
-    icon: FcIdea,
-    title: "Criatividade",
-    description: "Brainstorm",
+    name: "creativity-png",
+    img: creativity,
+    description: "Pensamento Criativo",
   },
   {
-    id: 3,
-    name: "puzzle-icon",
-    icon: FcPuzzle,
-    title: "Sistematização",
-    description: "Organização",
+    id: 4,
+    name: "adaptability-png",
+    img: adaptability,
+    description: "Alta adaptabilidade",
+  },
+  {
+    id: 5,
+    name: "teamwork-png",
+    img: teamwork,
+    description: "Trabalho em Equipe",
   },
 ];
 
 export const InformationContainer = () => {
   return (
     <section id="information">
-      
       <div className="banner-container">
         <img
-          className="banner"
+          className="banner-img"
           src={banner}
           alt="Banner escrito o nome Leonardo Chermaut e dando boas saudações."
         />
       </div>
-      {information.map((item) => (
-        <div key={item.id} className="info-card">
-          <item.icon id={`${item.name}`} />
+      {softkills.map((skill) => (
+        <div key={skill.id} className="info-card">
+          <img id={skill.name} src={skill.img} />
           <div>
-            <h3>{item.title}</h3>
-            <p>{item.description}</p>
+            <p className="">{skill.description}</p>
           </div>
         </div>
       ))}
