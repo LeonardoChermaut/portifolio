@@ -26,18 +26,18 @@
 
     .info-card
         @include mixins.center
-        margin: .3rem 0
         gap: 1.4rem
         width: 100%
+        margin: .3rem 0
         justify-content: flex-start
 
 
     .info-card p
+        cursor: grab
         font-size: .9rem
         font-weight: bold
-        color: variables.$text-color
         position: relative
-        cursor: pointer
+        color: variables.$text-color
 
     .info-card p:after 
         content: ""
