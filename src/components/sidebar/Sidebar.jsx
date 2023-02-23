@@ -3,7 +3,7 @@ import { InformationContainer } from "../containers/information/InformationConta
 import Avatar from "../../assets/Leonardo.png";
 import "./sidebar.sass";
 
-const url = "https://drive.google.com/uc?export=download&id=1RCx_XoHKHdrx7FjPpdwqQ3a8SQyl1_EZ";
+const url = "https://drive.google.com/uc?export=download&id=1AAOKN6VQVLLj8nBxaCjkBlelfL3QC9vu";
 
 export const Sidebar = () => {
   return (
