@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import { MainContent } from "./components/main-content/MainContent";
 import { Sidebar } from "./components/sidebar/Sidebar";
 import "./styles/app.sass";
@@ -8,6 +9,7 @@ export function App() {
       <div className="divisor-container"></div>
       <Sidebar />
       <MainContent />
+      <Analytics />
     </div>
   );
 }
