@@ -13,7 +13,7 @@ import {
   SiJava,
 } from "react-icons/si";
 import { FaBootstrap } from "react-icons/fa";
-import { Bar } from "../../bar/Bar";
+import { Bar } from "../../index";
 
 const stacks = [
   {

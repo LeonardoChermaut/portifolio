@@ -1,6 +1,6 @@
 import "./about.sass";
 import gifSuperMario from "../../../assets/mariodev.gif";
-import { Bar } from "../../bar/Bar";
+import { Bar } from "../../index";
 
 export const AboutContainer = () => {
   return (

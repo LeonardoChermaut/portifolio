@@ -1,9 +1,9 @@
 import React from "react";
-import { InformationContainer } from "../containers/information/InformationContainer";
+import { InformationContainer } from "../index";
 import Avatar from "../../assets/Leonardo.png";
 import "./sidebar.sass";
 
-const url = "https://drive.google.com/uc?export=download&id=1E_gU7B2M71SIHzqhwxbH_B9ErekqUldD";
+const url = "https://drive.google.com/uc?export=download&id=1YfkFHBd1w9qHp_63m5zqxQcGuFlIFOJo";
 
 export const Sidebar = () => {
   return (

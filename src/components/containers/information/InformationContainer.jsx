@@ -1,4 +1,4 @@
-import { SocialNetworkContainer } from "../social/SocialNetworkContainer";
+import { SocialNetworkContainer } from "../../index";
 import QRCodeWpp from "../../../assets/QRcode.png";
 import banner from "../../../assets/banner.png";
 import communication from "../../../assets/communication.png";

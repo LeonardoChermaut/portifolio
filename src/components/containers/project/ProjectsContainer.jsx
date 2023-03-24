@@ -1,6 +1,6 @@
 import "./project.sass";
 import gifDev from "../../../assets/leodev.gif";
-import { Bar } from "../../bar/Bar";
+import { Bar } from "../../index";
 
 export const ProjectsContainer = () => {
   return (

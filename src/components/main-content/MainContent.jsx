@@ -1,6 +1,8 @@
-import { TechnologiesContainer } from "../containers/technologies/TechnologiesContainer";
-import { AboutContainer } from "../containers/about/AboutContainer";
-import { ProjectsContainer } from "../containers/project/ProjectsContainer";
+import {
+  TechnologiesContainer,
+  AboutContainer,
+  ProjectsContainer,
+} from "../index";
 import "./maincontent.sass";
 
 export const MainContent = () => {
