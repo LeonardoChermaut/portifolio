@@ -5,12 +5,12 @@ import {
   DiJsBadge,
   DiPostgresql,
   DiReact,
+  DiJava
 } from "react-icons/di";
 import {
   SiStyledcomponents,
   SiSpring,
-  SiMaterialui,
-  SiJava,
+  SiMaterialdesign,
 } from "react-icons/si";
 import { FaBootstrap } from "react-icons/fa";
 import { Bar } from "../../index";
@@ -20,13 +20,13 @@ const stacks = [
     id: "java",
     name: "Java",
     description: "Java 11 em diante, Programação Orientada a Objetos.",
-    icon: <SiJava />,
+    icon: <DiJava />,
   },
   {
     id: "js",
     name: "JavaScript",
     description:
-      "Vanilla, requisição via fetch ou axios, funções assíncronas, tratamento de erros etc.",
+      "Vanilla, JSON, fetchAPI, axios, funções assíncronas, tratamento de erros, DOM",
     icon: <DiJsBadge />,
   },
   {
@@ -45,7 +45,7 @@ const stacks = [
   {
     id: "html",
     name: "HTML 5",
-    description: "HTML semântico, boas práticas, acessibilidade etc.",
+    description: "HTML semântico, boas práticas, acessibilidade, CEO etc.",
     icon: <DiHtml5 />,
   },
   {
@@ -57,8 +57,8 @@ const stacks = [
   {
     id: "material",
     name: "Material",
-    description: "Material UI para HTML ou React MatarialUI.",
-    icon: <SiMaterialui />,
+    description: "Material UI, Material Design, para HTML ou React.",
+    icon: <SiMaterialdesign />,
   },
   {
     id: "bootstrap",
@@ -70,7 +70,7 @@ const stacks = [
     id: "spring",
     name: "Spring Boot",
     description:
-      "Injeção de dependências, padrão MVC, Jpa , Hibernate, Jwt etc.",
+      "Injeção de dependências, JWT, APIRestFul, padrão MVC, Jpa , Hibernate etc.",
     icon: <SiSpring />,
   },
   {
