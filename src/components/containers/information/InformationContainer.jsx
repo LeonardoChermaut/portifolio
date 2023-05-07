@@ -1,38 +1,19 @@
-import { SocialNetworkContainer } from "../../index";
-import QRCodeWpp from "../../../assets/QRcode.png";
-import banner from "../../../assets/banner.png";
-import communication from "../../../assets/communication.png";
-import creativity from "../../../assets/creativity.png";
-import teamwork from "../../../assets/teamwork.png";
-import adaptability from "../../../assets/adaptability.png";
 import "./information.sass";
+import { SocialNetworkContainer } from "../../index";
+import { softkills, QRCodeWpp, banner } from "../../../assets/constants";
 
-const softkills = [
-  {
-    id: 1,
-    name: "communication-png",
-    img: communication,
-    description: "Comunicação Efetiva",
-  },
-  {
-    id: 2,
-    name: "creativity-png",
-    img: creativity,
-    description: "Pensamento Criativo",
-  },
-  {
-    id: 4,
-    name: "adaptability-png",
-    img: adaptability,
-    description: "Alta adaptabilidade",
-  },
-  {
-    id: 5,
-    name: "teamwork-png",
-    img: teamwork,
-    description: "Trabalho em Equipe",
-  },
-];
+const mappedSoftkills = (softkills = []) =>
+  softkills.map((skill) => {
+    const { id: key, name: id, img: src, description } = skill;
+    return (
+      <div key={key} className="info-card">
+        <img id={id} src={src} />
+        <div>
+          <p className="description">{description}</p>
+        </div>
+      </div>
+    );
+  });
 
 export const InformationContainer = () => {
   return (
@@ -44,14 +25,7 @@ export const InformationContainer = () => {
           alt="Banner escrito o nome Leonardo Chermaut e dando boas saudações."
         />
       </div>
-      {softkills.map((skill) => (
-        <div key={skill.id} className="info-card">
-          <img id={skill.name} src={skill.img} />
-          <div>
-            <p className="">{skill.description}</p>
-          </div>
-        </div>
-      ))}
+      {mappedSoftkills(softkills)}
       <img className="qr-code" src={QRCodeWpp} alt="QR Code Whatsapp" />
       <SocialNetworkContainer />
     </section>
