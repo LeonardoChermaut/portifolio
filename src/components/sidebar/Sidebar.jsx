@@ -3,7 +3,7 @@ import { InformationContainer } from "../index";
 import Avatar from "../../assets/Leonardo.png";
 import "./sidebar.sass";
 
-const url = "https://drive.google.com/uc?export=download&id=1YfkFHBd1w9qHp_63m5zqxQcGuFlIFOJo";
+const DOWNLOAD_URL = "https://drive.google.com/uc?export=download&id=1YfkFHBd1w9qHp_63m5zqxQcGuFlIFOJo";
 
 export const Sidebar = () => {
   return (
@@ -13,7 +13,7 @@ export const Sidebar = () => {
       <a
         id="btn-download-portifolio"
         className="btn"
-        href={url}
+        href={DOWNLOAD_URL}
         target="_blank"
       >
         Download currículo
