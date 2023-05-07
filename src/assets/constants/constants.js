@@ -1,9 +1,9 @@
-import QRCodeWpp from "./QRcode.png";
-import banner from "./banner.png";
-import communication from "./communication.png";
-import creativity from "./creativity.png";
-import teamwork from "./teamwork.png";
-import adaptability from "./adaptability.png";
+import QRCodeWpp from "../QRcode.png";
+import banner from "../banner.png";
+import communication from "../communication.png";
+import creativity from "../creativity.png";
+import teamwork from "../teamwork.png";
+import adaptability from "../adaptability.png";
 
 const softkills = [
   {
