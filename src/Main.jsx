@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { App } from "./App";
-import "./styles/global.sass";
+import "./data/presentation/sass/global.sass";
 
 ReactDOM.render(
   <React.StrictMode>

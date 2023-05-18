@@ -1,0 +1,1 @@
+export { socialNetworks } from "./constant"

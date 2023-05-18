@@ -1,0 +1,34 @@
+@use '../../sass/variables'
+@use '../../sass/mixins'
+    
+#main-content
+    flex: 2 1 0
+    padding: 3rem
+    box-shadow: variables.$box-shadow
+    background-color: variables.$bg-color
+    border-radius: variables.$container-border-radius
+
+    section
+        display: flex
+        flex-direction: column
+
+    h2
+        @include mixins.center
+        gap: 1rem
+        font-size: 2.2rem
+        margin-right: .9rem
+        margin-bottom: 1.3rem
+        justify-content: start
+        color: variables.$text-color
+            
+    p
+        color: variables.$text-color-secondary
+        margin-bottom: 1rem
+        line-height: 1.3rem
+
+    .btn
+        align-self: start
+        @include mixins.btn
+
+    
+        
