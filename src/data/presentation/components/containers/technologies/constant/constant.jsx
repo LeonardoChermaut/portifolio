@@ -44,7 +44,7 @@ const stacks = [
         key: 5,
         id: "html",
         name: "HTML 5",
-        description: "HTML semântico, boas práticas, acessibilidade, CEO etc.",
+        description: "HTML semântico, boas práticas, acessibilidade, SEO etc.",
         icon: <DiHtml5 />,
     },
     {
