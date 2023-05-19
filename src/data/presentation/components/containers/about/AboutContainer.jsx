@@ -1,5 +1,5 @@
 import "./about.sass";
-import gifSuperMario from "../../../assets/mariodev.gif";
+import superMarioDev from "../../../assets/mariodev.mp4";
 import { Bar } from "../../index";
 
 export const AboutContainer = () => {
@@ -24,11 +24,12 @@ export const AboutContainer = () => {
         dinâmicos e que priorizem a demanda em equipe, a qualidade entre os
         colaboradores, facilitando assim o desenvolvimento de aplicativos.
       </p>
-      <img
-        className="gif-super-mario"
-        src={gifSuperMario}
+      <video autoPlay loop muted
+        className="video-super-mario"
         alt="Desenho do super mário, sentado e programando no computador a noite."
-      />
+      >
+        <source src={superMarioDev} type="video/mp4" />
+      </video>
     </section>
   );
 };

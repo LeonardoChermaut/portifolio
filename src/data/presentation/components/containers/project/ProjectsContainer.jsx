@@ -1,23 +1,24 @@
 import React from "react";
 import "./project.sass";
-import gifDev from "../../../assets/leodev.gif";
+import leonardoDev from "../../../assets/leodev.mp4";
 import { Bar } from "../../index";
 
 export const ProjectsContainer = () => {
   return (
     <section className="projects-container">
       <div className="sub-container">
-      <h2>Projetos</h2>
-      <Bar />
+        <h2>Projetos</h2>
+        <Bar />
       </div>
 
       <div className="about-project-conteiner">
         <h3 className="sub-title-project">Alterdata Open Space</h3>
-        <img
-          className="gif-dev"
-          src={gifDev}
-          alt="Desenho do super mário, sentado e programando no computador a noite."
-        />
+        <video autoPlay loop muted
+          className="video-dev"
+          alt="Video do super mário, sentado e programando no computador a noite."
+        >
+          <source src={leonardoDev} type="video/mp4" />
+        </video>
         <p>
           Este foi o nome criado para a aplicação de uso interno da empresa. Os
           colaboradores previamente autorizados, podem agendar seus dias e
