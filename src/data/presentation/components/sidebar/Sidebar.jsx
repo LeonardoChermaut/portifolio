@@ -1,15 +1,17 @@
 import React from "react";
 import "./sidebar.sass";
 import { InformationContainer } from "../index";
-import Avatar from "../../assets/Leonardo.png";
+import Avatar from "../../assets/Leonardo.webp";
 import curriculo from "../../../factories/download/leonardo_chermaut_curriculo.pdf"
 
 const download = "leonardo_chermaut_curriculo.pdf";
+const WIDTH = 384;
+const HEIGHT = 395;
 
 export const Sidebar = () => {
   return (
     <aside id="sidebar">
-      <img className="avatar-profile" src={Avatar} alt="Foto do Leonardo Chermaut falando no microfone em público" />
+      <img className="avatar-profile" width={WIDTH} height={HEIGHT} src={Avatar} alt="Foto do Leonardo Chermaut falando no microfone em público" />
       <InformationContainer />
       <a
         id="btn-download-portifolio"
