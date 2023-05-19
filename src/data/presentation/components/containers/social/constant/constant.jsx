@@ -9,6 +9,7 @@ export const socialNetworks = [
       icon: <FaGithub />,
       target: "_blank",
       className: "social-btn",
+      title: "Link para o repositório do Leonardo Chermaut no GitHub",
     },
     {
       id: 2,
@@ -17,6 +18,7 @@ export const socialNetworks = [
       icon: <FaInstagram />,
       target: "_blank",
       className: "social-btn",
+      title: "Link para o perfil do Leonardo Chermaut no Instagram",
     },
     {
       id: 3,
@@ -25,6 +27,7 @@ export const socialNetworks = [
       icon: <FaLinkedinIn />,
       target: "_blank",
       className: "social-btn",
+      title: "Link para o perfil do Leonardo Chermaut no LinkedIn",
     },
     {
       id: 4,
@@ -33,6 +36,7 @@ export const socialNetworks = [
       icon: <AiOutlineMail />,
       target: "_blank",
       className: "social-btn",
+      title: "Link para o e-mail do Leonardo Chermaut",
     },
     {
       id: 5,
@@ -41,6 +45,7 @@ export const socialNetworks = [
       icon: <AiOutlineWhatsApp />,
       target: "_blank",
       className: "social-btn",
+      title: "Link para o WhatsApp do Leonardo Chermaut",
     },
   ];
 

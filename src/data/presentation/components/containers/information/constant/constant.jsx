@@ -11,24 +11,28 @@ const softskills = [
         name: "communication-png",
         src: communication,
         description: "Comunicação Efetiva",
+        alt: "Icone representacional sobre a softskill de comunicação efetiva"
     },
     {
         id: 2,
         name: "creativity-png",
         src: creativity,
         description: "Pensamento Criativo",
+        alt: "Icone representacional sobre a softskill de criatividade"
     },
     {
         id: 4,
         name: "adaptability-png",
         src: adaptability,
         description: "Alta adaptabilidade",
+        alt: "Icone representacional sobre a softskill de adptabilidade"  
     },
     {
         id: 5,
         name: "teamwork-png",
         src: teamwork,
         description: "Trabalho em Equipe",
+        alt: "Icone representacional sobre a softskill de trabalho em equipe"
     },
 ];
 

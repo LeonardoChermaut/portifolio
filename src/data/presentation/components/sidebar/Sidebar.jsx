@@ -17,6 +17,7 @@ export const Sidebar = () => {
         href={curriculo}
         download={download}
         target="_blank"
+        title="Link para download do currículo Leonardo Chermaut"
       >
         Download currículo
       </a>
