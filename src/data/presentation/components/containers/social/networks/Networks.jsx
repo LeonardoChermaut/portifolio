@@ -5,15 +5,18 @@ import "../socialnetwork.sass";
 export const Networks = () => {
     return socialNetworks.map((network) => {
         const { id: key, name, href, icon, target, className, title } = network;
-        return (
+        const handleSocialClick = () =>  window.open(href);
+        return (        
             <button
+                type="button"
                 key={key}
-                href={href}
+                onClick={handleSocialClick}
                 name={name}
                 title={title}
                 target={target}
                 className={className}
-            >
+
+            >   
                 {icon}
             </button>
         );
