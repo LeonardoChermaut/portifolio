@@ -1,11 +1,11 @@
 import React from "react";
-import { stacks } from "../constant";
+import PropTypes from "prop-types";
 
-export const Stacks = () => {
-  return stacks.map((stack) => {
-    const { key, id, icon, name: title, description } = stack;
+export const Stacks = ({ stacks }) => {
+  return stacks.map((stack, index) => {
+    const { id, icon, name: title, description } = stack;
     return (
-      <div key={key} id={id} className="stack-card">
+      <div key={index} id={id} className="stack-card">
         {icon}
         <div className="stack-info">
           <h3>{title}</h3>
@@ -14,4 +14,17 @@ export const Stacks = () => {
       </div>
     );
   });
-}
+};
+
+Stacks.propTypes = {
+  stacks: PropTypes.arrayOf(
+    PropTypes.shape({
+      key: PropTypes.number.isRequired,
+      id: PropTypes.string.isRequired,
+      icon: PropTypes.node.isRequired,
+      name: PropTypes.string.isRequired,
+      description: PropTypes.string.isRequired,
+    })
+  ),
+};
+

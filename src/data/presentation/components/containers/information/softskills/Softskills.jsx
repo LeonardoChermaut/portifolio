@@ -1,12 +1,12 @@
 import React from "react";
-import { softskills } from "../constant"
+import PropTypes from "prop-types";
 
-export const Softskills = () => {
-    return softskills.map((skill) => {
-        const { id: key, name: id, src, description, alt } = skill;
+export const Softskills = ({ softskills }) => {
+    return softskills.map((skill, index) => {
+        const { name, src, description, alt } = skill;
         return (
-            <div key={key} className="info-card">
-                <img id={id} src={src} alt={alt}/>
+            <div key={index} className="info-card">
+                <img id={name} src={src} alt={alt} />
                 <div>
                     <p className="description">{description}</p>
                 </div>
@@ -15,4 +15,13 @@ export const Softskills = () => {
     });
 };
 
-
+Softskills.propTypes = {
+    softskills: PropTypes.arrayOf(
+        PropTypes.shape({
+            name: PropTypes.string.isRequired,
+            src: PropTypes.string.isRequired,
+            description: PropTypes.string.isRequired,
+            alt: PropTypes.string.isRequired,
+        })
+    ),
+};

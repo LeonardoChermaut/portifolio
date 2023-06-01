@@ -1,24 +1,37 @@
 import React from "react";
-import { socialNetworks } from "../constant";
+import PropTypes from "prop-types";
 import "../socialnetwork.sass";
 
-export const Networks = () => {
-    return socialNetworks.map((network) => {
-        const { id: key, name, href, icon, target, className, title } = network;
-        const handleSocialClick = () =>  window.open(href);
+const openSocialMedia = href => window.open(href);
+
+export const Networks = ({ socialNetworks }) => {
+    return socialNetworks.map((network, index) => {
+        const { name, href, icon, target, className, title } = network;
         return (        
             <button
                 type="button"
-                key={key}
-                onClick={handleSocialClick}
+                key={index}
+                onClick={() => openSocialMedia(href)}
                 name={name}
                 title={title}
                 target={target}
                 className={className}
-
             >   
                 {icon}
             </button>
         );
     })
 }
+
+Networks.propTypes = {
+    socialNetworks: PropTypes.arrayOf(
+        PropTypes.shape({
+            name: PropTypes.string.isRequired,
+            href: PropTypes.string.isRequired,
+            icon: PropTypes.node.isRequired,
+            target: PropTypes.string.isRequired,
+            className: PropTypes.string.isRequired,
+            title: PropTypes.string.isRequired,
+        })
+    ),
+};
