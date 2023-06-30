@@ -37,12 +37,20 @@
     <ul>
       <li><code>src/</code>: Contém os arquivos fonte do projeto.</li>
       <ul>
-        <li><code>components/</code>: Pasta com componentes reutilizáveis.</li>
-        <li><code>pages/</code>: Pasta com as páginas do portfólio.</li>
-        <li><code>styles/</code>: Arquivos Sass para estilização.</li>
+        <li><code>data/</code>: Pasta com os dados do projeto.</li>
+        <ul>
+          <li><code>factory/</code>: Pasta com a fábrica de dados.</li>
+          <ul>
+            <li><code>download/</code>: Pasta com o PDF do currículo.</li>
+          </ul>
+          <li><code>presentation/</code>: Pasta com os recursos de apresentação.</li>
+          <ul>
+            <li><code>assets/</code>: Pasta com os recursos visuais.</li>
+            <li><code>components/</code>: Pasta com os componentes.</li>
+            <li><code>sass/</code>: Arquivos Sass para estilização.</li>
+          </ul>
+        </ul>
       </ul>
-      <li><code>public/</code>: Contém arquivos estáticos.</li>
-      <li><code>build/</code>: Diretório gerado após a construção do projeto.</li>
     </ul>
   </section>
   <section>
