@@ -2,19 +2,19 @@ import React from "react";
 import PropTypes from "prop-types";
 import "../socialnetwork.sass";
 
-const openSocialMedia = href => window.open(href);
 
 export const Networks = ({ socialNetworks }) => {
     return socialNetworks.map((network, index) => {
         const { name, href, icon, target, className, title } = network;
+        const openSocialMedia = () => window.open(href);
         return (        
             <button
                 type="button"
                 key={index}
-                onClick={() => openSocialMedia(href)}
+                onClick={() => openSocialMedia()}
                 name={name}
                 title={title}
-                target={target}
+                formTarget={target}
                 className={className}
             >   
                 {icon}

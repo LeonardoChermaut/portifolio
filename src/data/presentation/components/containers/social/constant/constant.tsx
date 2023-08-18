@@ -1,5 +1,6 @@
 import { FaLinkedinIn, FaGithub, FaInstagram } from "react-icons/fa";
 import { AiOutlineMail, AiOutlineWhatsApp } from "react-icons/ai";
+import React from "react";
 
 export const socialNetworks = [
     {

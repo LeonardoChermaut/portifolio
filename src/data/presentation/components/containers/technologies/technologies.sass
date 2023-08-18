@@ -10,13 +10,14 @@
     .stacks-grid
         display: flex
         flex-wrap: wrap
-        gap: 1.5rem
+        gap: 1rem
 
     .stack-card
         display: flex
+        justify-content: center
+        align-items: center
         width: 45%
-        padding: 1rem
-        margin: 0 auto
+        padding: .8rem
         border: 1px solid #333
         transition: transform 0.3s
         box-shadow: variables.$box-shadow
@@ -84,8 +85,9 @@
         svg 
             color: #00618A
 
-    @media (max-width: 599px)  
+    @media (max-width: 1228px)  
         .stack-card
+            margin: 0 auto
             width: 100%     
     
 

@@ -8,6 +8,7 @@ import {
     DiReact,
     DiJava,
 } from "react-icons/di";
+import React from "react";
 
 const stacks = [
     {

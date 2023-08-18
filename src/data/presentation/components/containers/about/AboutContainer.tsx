@@ -1,6 +1,7 @@
 import "./about.sass";
 import superMarioDev from "../../../assets/mariodev.mp4";
 import { Bar } from "../../index";
+import React from "react";
 
 export const AboutContainer = () => {
   return (

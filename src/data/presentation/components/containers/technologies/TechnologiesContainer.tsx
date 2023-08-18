@@ -1,3 +1,4 @@
+import React from "react";
 import "./technologies.sass";
 import { Bar } from "../../index";
 import { Stacks } from "./stacks/Stacks";
