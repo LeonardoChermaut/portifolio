@@ -9,7 +9,6 @@ type StackType = {
   icon: React.ReactNode,
 }
 
-
 export const Stacks = ({ stacks }) => {
    return stacks.map(({ key, icon, title, description, id }: StackType, _) => {
     return (
