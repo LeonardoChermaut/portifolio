@@ -1,4 +1,4 @@
-import { SiStyledcomponents, SiSpring, SiMaterialdesign } from "react-icons/si";
+import { SiStyledcomponents, SiSpring, SiMaterialdesign, SiTypescript, SiNestjs } from "react-icons/si";
 import { FaBootstrap } from "react-icons/fa";
 import {
     DiHtml5,
@@ -10,81 +10,91 @@ import {
 } from "react-icons/di";
 import React from "react";
 
-const stacks = [
+export const stacks = [
     {
         key: 1,
-        id: "java",
-        name: "Java",
-        description: "Java 11 em diante, Programação Orientada a Objetos.",
-        icon: <DiJava />,
+        id: "nestjs",
+        title: "NestJS",
+        description: "APIRestFul com Programação Orientada a Objetos, Injeção de dependencias, Design Patterns, TypeORM, Jwt Authentication etc.",
+        icon: <SiNestjs />,
     },
+    
     {
         key: 2,
-        id: "js",
-        name: "JavaScript",
-        description:
-            "Vanilla, JSON, fetchAPI, axios, funções assíncronas, tratamento de erros, DOM",
-        icon: <DiJsBadge />,
+        id: "typescript",
+        title: "TypeScript",
+        description: "Programação Orientada a Objetos, Tipagem Estática, Interfaces, Generics etc.",
+        icon: <SiTypescript />,
     },
     {
         key: 3,
+        id: "java",
+        title: "Java",
+        description: "Java 8+, Programação Orientada a Objetos",
+        icon: <DiJava />,
+    },
+    {
+        key: 4,
+        id: "javascript",
+        title: "JavaScript",
+        description: "Vanilla, JSON, fetchAPI, funções assíncronas async/await, Promises, Currying, tratamento de erros, DOM etc.",
+        icon: <DiJsBadge />,
+    },
+    {
+        key: 5,
         id: "react",
-        name: "React JS",
+        title: "React JS",
         description: "React Hooks, context, componentização funcional etc. ",
         icon: <DiReact />,
     },
     {
-        key: 4,
-        id: "styled",
-        name: "Styled Component",
+        key: 6,
+        id: "styled-component",
+        title: "Styled Component",
         description:
             "Estilização de componentes estáticos ou dinâmicos (via props).",
         icon: <SiStyledcomponents />,
     },
     {
-        key: 5,
+        key: 7,
         id: "html",
-        name: "HTML 5",
+        title: "HTML 5",
         description: "HTML semântico, boas práticas, acessibilidade, SEO etc.",
         icon: <DiHtml5 />,
     },
     {
-        key: 6,
+        key: 8,
         id: "css",
-        name: "CSS 3",
+        title: "CSS 3",
         description: "Boas práticas, responsividade, flex-box, grid-layout etc.",
         icon: <DiCss3 />,
     },
     {
-        key: 7,
+        key: 9,
         id: "material",
-        name: "Material",
+        title: "Material",
         description: "Material UI, Material Design, para HTML ou React.",
         icon: <SiMaterialdesign />,
     },
     {
-        key: 8,
+        key: 10,
         id: "bootstrap",
-        name: "Bootstrap",
+        title: "Bootstrap",
         description: "Bootstrap para HTML ou React Boostrap.",
         icon: <FaBootstrap />,
     },
     {
-        key: 9,
+        key: 11,
         id: "spring",
-        name: "Spring Boot",
-        description:
-            "Injeção de dependências, JWT, APIRestFul, padrão MVC, Jpa , Hibernate etc.",
+        title: "Spring Boot",
+        description: "Injeção de dependências, JWT, APIRestFul, padrão MVC, Jpa , Hibernate etc.",
         icon: <SiSpring />,
     },
     {
-        key: 10,
+        key: 12,
         id: "postgresql",
-        name: "PostgreSQL",
+        title: "PostgreSQL",
         description: "Querys, tratamentos, criação e integração.",
         icon: <DiPostgresql />,
     },
 ];
-
-
-export { stacks } 
