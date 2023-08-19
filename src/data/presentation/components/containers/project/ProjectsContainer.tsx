@@ -1,6 +1,6 @@
 import React from "react";
 import "./project.sass";
-import leonardoDev from "../../../assets/leodev.mp4";
+import AnimationGif from "../../../assets/leodev.mp4";
 import { Bar } from "../../index";
 
 export const ProjectsContainer = () => {
@@ -17,7 +17,7 @@ export const ProjectsContainer = () => {
           className="video-dev"
           alt="Video do super mário, sentado e programando no computador a noite."
         >
-          <source src={leonardoDev} type="video/mp4" />
+          <source src={AnimationGif} type="video/mp4" />
         </video>
         <p>
           Este foi o nome criado para a aplicação de uso interno da empresa. Os
