@@ -2,9 +2,9 @@ import React from "react";
 import "./sidebar.sass";
 import { InformationContainer } from "../index";
 import Avatar from "../../assets/Leonardo.webp";
-import curriculo from "../../../factories/download/leonardo_chermaut_curriculo.pdf"
+import CurriculoHref from "../../../factories/download/leonardo_chermaut_curriculo_dev.pdf";
 
-const download = "leonardo_chermaut_curriculo.pdf";
+const CURRICULO_FILE = "leonardo_chermaut_curriculo_dev.pdf";
 
 export const Sidebar = () => {
   return (
@@ -14,8 +14,8 @@ export const Sidebar = () => {
       <a
         id="btn-download-portifolio"
         className="btn"
-        href={curriculo}
-        download={download}
+        href={CurriculoHref}
+        download={CURRICULO_FILE}
         target="_blank"
         title="Link para download do currículo Leonardo Chermaut"
       >
