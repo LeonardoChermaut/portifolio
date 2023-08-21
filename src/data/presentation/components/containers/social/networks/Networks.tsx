@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import "../socialnetwork.sass";
 
-type NetworkType = {
+interface INetwork {
     id: number,
     name: string,
     href: string,
@@ -12,15 +12,19 @@ type NetworkType = {
     title: string,
 }
 
-export const Networks = ({ socialNetworks }) => {
-    return socialNetworks.map(({ id, name, href, icon, target, className, title }: NetworkType, _: undefined) => {
-        const openSocialMedia = () => window.open(href);
-        
+type SocialMediaType = {
+    socialNetworks: INetwork[],
+}
+
+export const Networks = ({ socialNetworks }: SocialMediaType ) => {
+    const openSocialMedia = (href: string): WindowProxy | null => window.open(href);
+    
+    return socialNetworks.map(({ id, name, href, icon, target, className, title }) => {
         return (        
             <button
                 type="button"
                 key={id}
-                onClick={() => openSocialMedia()}
+                onClick={() => openSocialMedia(href)}
                 name={name}
                 title={title}
                 formTarget={target}
