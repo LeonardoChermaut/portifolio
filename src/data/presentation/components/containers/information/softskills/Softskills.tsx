@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-type SoftskillsType = {
+interface ISoftskills {
     id: number,
     name: string,
     src: string,
@@ -9,8 +9,12 @@ type SoftskillsType = {
     alt: string,
 }
 
-export const Softskills = ({ softskills }) => {
-    return softskills.map(({id, name, src, description, alt }: SoftskillsType, _: undefined) => {
+type SoftskillsType = {
+    softskills: ISoftskills[],
+}
+
+export const Softskills = ({ softskills }: SoftskillsType) => {
+    return softskills.map(({id, name, src, description, alt }) => {
         return (
             <div key={id} className="info-card">
                 <img id={name} src={src} alt={alt} />
