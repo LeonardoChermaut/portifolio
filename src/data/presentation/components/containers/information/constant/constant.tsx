@@ -1,4 +1,4 @@
-import QRCodeWpp from "../../../../assets/QRcode.webp";
+import QRCodeWpp from "../../../../assets/QRCode.webp";
 import banner from "../../../../assets/banner.png";
 import communication from "../../../../assets/communication.png";
 import creativity from "../../../../assets/creativity.png";
